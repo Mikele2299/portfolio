@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  
+  
+  <script>
+  function downloadCV() {
+     const link = document.createElement('a');
+     link.href = 'https://www.google.it'; // link di prova
+     link.target = '_blank'; // facoltativo: apre in una nuova scheda
+     document.body.appendChild(link);
+     link.click();
+     document.body.removeChild(link);
+  }
+</script>
+  
+  
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="D:/miche/Desktop/foto.jpeg" alt="Michele Del Mastro" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Michele Del Mastro">Michele Del Mastro</h1>
+
+          <p></p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:micheledelmastro.istruzione@gmail.com" class="contact-link">micheledelmastro.istruzione@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+393313826575" class="contact-link">+393313826575</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="22-09-1999">22/09/1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Avella(AV), Italia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/michele-del-mastro-075026244/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Esperienze</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Progetti</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Competenze</button>
+          </li>
+
+          
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Chi sono</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Neolaureato in Informatica, con solide esperienze di lavoro in team durante progetti accademici. Ho sviluppato ottime capacità comunicative e organizzative, grazie anche al ruolo di scrutatore elettorale e all’impegno in attività sportive e nella gestione di eventi.
+          </p>
+
+          <p>
+             Sono una persona proattiva, responsabile e orientata alla risoluzione dei problemi, qualità che mi permettono di affrontare con efficacia ambienti dinamici e collaborativi.
+          </p>
+        </section>
+		
+		            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/logo.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <button onclick="downloadCV()"><h4 class="h4 service-item-title">Scarica il CV</h4></button>
+
+           
+              </div>
+
+            </li>
+
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+           
+
+          </section>
+
+        </div>
+
+
+       
+
+      </article>
+
+
+
+
+
+      <!--
+        - #curriculum
+      -->
+
+      <article class="esperienze" data-page="esperienze">
+
+        <header>
+          <h2 class="h2 article-title">Esperienze</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Studi</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Università degli studi di Salerno (SA), Dipartimento informatica</h4>
+
+              <span>2019 — 2024</span>
+
+              <p class="timeline-text">
+                Laurea triennale in Scienze e teconlogie informatica L-31.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Masullo-Theti, Nola(Na)</h4>
+
+              <span>2013 — 2028</span>
+
+              <p class="timeline-text">
+                Perito in Informatica e telecomicazioni
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Esperienze</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagista per tesi presso Università degli Studi di Salerno</h4>
+
+              <span>Maggio 2024 - Novembre 2024</span>
+
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Gestione mail e supporto amministrativo presso offcina di famiglia</h4>
+
+              <span>Gennaio 2025 – in corso</span>
+
+           
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Segretario presso seggio elettorale</h4>
+
+              <span>2 Esperienze</span>
+
+
+
+            </li>
+			
+			 <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ripetizione per studenti di informatica</h4>
+
+              <span>2025 - In corso</span>
+
+
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="progetti" data-page="progetti">
+
+        <header>
+          <h2 class="h2 article-title">Progetti</h2>
+        </header>
+
+        <section class="projects">
+
+          
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Armando9889/Progetto_BD_VeicHome" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sql.png" alt="Base di dati" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Base di dati</h3>
+
+                <p class="project-category">Gestione di una piattaforma online</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Armando9889/Progetto_TSW" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/2.png" alt="web" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Teconlogie web</h3>
+
+                <p class="project-category">Servizio di e-commerce per la vendita</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/Armando9889/Gruppo-n-10" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/codia-html.png" alt="interazione" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Interazione uomo macchina</h3>
+
+                <p class="project-category">Piattaforma per facilitare e organizzare l'interazione uomo macchina</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/Mikele2299/Tirocinio" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/python.png" alt="estrazione" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tiricinio-Stage</h3>
+
+                <p class="project-category">Estrazione di informazioni personali da curriculum utilizzando python</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="competenze" data-page="competenze">
+
+        <header>
+          <h2 class="h2 article-title">Competenze</h2>
+        </header>
+		
+		        <section class="service">
+
+          <h3 class="h3 service-title">Competenze teniche</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tecnologie Web E Database </h4>
+
+                <p class="service-item-text"> SQL</p>
+				<p class="service-item-text"> JavaScript</p>
+				<p class="service-item-text"> HTML</p>
+				<p class="service-item-text"> CSS</p>
+				<p class="service-item-text"> PHP</p>
+                  
+                
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Linguaggi di programmazione</h4>
+
+                <p class="service-item-text">Python</p>
+				<p class="service-item-text">C</p>
+				<p class="service-item-text">Java</p>
+                
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Lingue</h4>
+
+                <p class="service-item-text">
+                  Italiano - madrelingua</p>
+				  <p class="service-item-text">Inglese – English level B1</p>
+				 
+                
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
